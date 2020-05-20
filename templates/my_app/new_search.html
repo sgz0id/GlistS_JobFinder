@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2 style="text-align: center">{{ search | title}}</h2>
+    <div class="row">
+        {% for post in final_postings %}
+            <div class="col s3 m4">
+                <div class="card">
+                    <div class="card-content black-text">
+                        <p class="card-title">{{ post.0 }}</p>
+                        <i class="large material-icons" style="color: #039be5">search</i>
+                        <i class="large material-icons" style="color: #4e342e">work</i>
+                        <i class="large material-icons" style="color: #1b5e20">attach_money</i>
+                    </div>
+                    <div class="card-action ">
+                    <a href="{{ post.1 }}">Click to visit</a>
+                </div>
+            </div>
+    </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}
