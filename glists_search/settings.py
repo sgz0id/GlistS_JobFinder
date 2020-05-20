@@ -126,4 +126,4 @@ STATIC_URL = '/static/'
 
 # style sheet -> graphics for the app
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-django.heroku.settings(locals())
+django_heroku.settings(locals())
