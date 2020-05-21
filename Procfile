@@ -1,1 +1,1 @@
-web: gunicorn glists.wsgi
+web: gunicorn glists_search.wsgi
