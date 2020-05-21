@@ -12,8 +12,7 @@ keyring==10.6.0
 keyrings.alt==3.0
 psycopg2==2.7.4
 pycrypto==2.6.1
-pygobject==3.36.1
-libgirepository==1.0
+pygobject==3.26.1
 python-dateutil==1.5
 pytz==2020.1
 pyxdg==0.25
