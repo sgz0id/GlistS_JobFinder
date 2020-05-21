@@ -1,1 +1,1 @@
-web: gunicorn jobFinder_GlistS.wsgi
+web: gunicorn glists.wsgi
