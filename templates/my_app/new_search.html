@@ -5,15 +5,12 @@
         {% for post in final_postings %}
             <div class="col s3 m4">
                 <div class="card">
+                    <div class="card-image">
+                        <a href="{{ post.1 }}"><img src="data:image/png;base64,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"></a>
+                    </div>
                     <div class="card-content black-text">
                         <p class="card-title">{{ post.0 }}</p>
-                        <i class="large material-icons" style="color: #039be5">search</i>
-                        <i class="large material-icons" style="color: #4e342e">work</i>
-                        <i class="large material-icons" style="color: #1b5e20">attach_money</i>
                     </div>
-                    <div class="card-action ">
-                    <a href="{{ post.1 }}">Click to visit</a>
-                </div>
             </div>
     </div>
         {% endfor %}
